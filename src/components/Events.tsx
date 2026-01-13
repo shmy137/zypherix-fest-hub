@@ -1,43 +1,6 @@
-import { Code, Palette, Brain, HelpCircle, Cpu, Rocket } from "lucide-react";
-
-const events = [
-  {
-    icon: Rocket,
-    title: "Hackathon",
-    description: "48-hour coding marathon to build innovative solutions",
-    color: "primary",
-  },
-  {
-    icon: Code,
-    title: "Coding Challenge",
-    description: "Competitive programming to test your algorithmic skills",
-    color: "secondary",
-  },
-  {
-    icon: Palette,
-    title: "UI/UX Design",
-    description: "Design stunning interfaces that solve real problems",
-    color: "primary",
-  },
-  {
-    icon: HelpCircle,
-    title: "Tech Quiz",
-    description: "Test your knowledge across domains of technology",
-    color: "secondary",
-  },
-  {
-    icon: Brain,
-    title: "AI/ML Workshop",
-    description: "Hands-on session on artificial intelligence and machine learning",
-    color: "primary",
-  },
-  {
-    icon: Cpu,
-    title: "Tech Talks",
-    description: "Industry experts share insights on emerging technologies",
-    color: "secondary",
-  },
-];
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
+import { events } from "@/data/events";
 
 const Events = () => {
   return (
@@ -57,58 +20,49 @@ const Events = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {events.map((event, index) => (
-            <div
-              key={event.title}
-              className="glass-card rounded-2xl p-8 group hover:border-primary/50 transition-all duration-500 hover:-translate-y-2"
-            >
-              <div 
-                className={`w-14 h-14 rounded-xl flex items-center justify-center mb-6 transition-all duration-300 group-hover:scale-110 ${
-                  event.color === "primary" 
-                    ? "bg-primary/20 group-hover:bg-primary/30" 
-                    : "bg-secondary/20 group-hover:bg-secondary/30"
-                }`}
+          {events.map((event, index) => {
+            const IconComponent = event.icon;
+            const isPrimary = index % 2 === 0;
+            
+            return (
+              <Link
+                key={event.id}
+                to={`/events/${event.id}`}
+                className="glass-card rounded-2xl p-8 group hover:border-primary/50 transition-all duration-500 hover:-translate-y-2 block"
               >
-                <event.icon 
-                  className={`w-7 h-7 ${
-                    event.color === "primary" ? "text-primary" : "text-secondary"
-                  }`} 
-                />
-              </div>
-              
-              <h3 className="font-display text-2xl font-semibold mb-3 text-foreground">
-                {event.title}
-              </h3>
-              
-              <p className="text-muted-foreground mb-6">
-                {event.description}
-              </p>
-              
-              <a
-                href="#register"
-                className={`inline-flex items-center font-semibold transition-colors duration-300 ${
-                  event.color === "primary" 
-                    ? "text-primary hover:text-primary/80" 
-                    : "text-secondary hover:text-secondary/80"
-                }`}
-              >
-                Register for this event
-                <svg
-                  className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+                <div 
+                  className={`w-14 h-14 rounded-xl flex items-center justify-center mb-6 transition-all duration-300 group-hover:scale-110 ${
+                    isPrimary 
+                      ? "bg-primary/20 group-hover:bg-primary/30" 
+                      : "bg-secondary/20 group-hover:bg-secondary/30"
+                  }`}
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5l7 7-7 7"
+                  <IconComponent 
+                    className={`w-7 h-7 ${isPrimary ? "text-primary" : "text-secondary"}`} 
                   />
-                </svg>
-              </a>
-            </div>
-          ))}
+                </div>
+                
+                <h3 className="font-display text-2xl font-semibold mb-3 text-foreground">
+                  {event.title}
+                </h3>
+                
+                <p className="text-muted-foreground mb-6">
+                  {event.tagline}
+                </p>
+                
+                <span
+                  className={`inline-flex items-center font-semibold transition-colors duration-300 ${
+                    isPrimary 
+                      ? "text-primary hover:text-primary/80" 
+                      : "text-secondary hover:text-secondary/80"
+                  }`}
+                >
+                  View Details
+                  <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                </span>
+              </Link>
+            );
+          })}
         </div>
       </div>
     </section>
