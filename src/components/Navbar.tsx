@@ -5,7 +5,6 @@ const navLinks = [
   { href: "#about", label: "About" },
   { href: "#events", label: "Events" },
   { href: "#schedule", label: "Schedule" },
-  { href: "#register", label: "Register" },
 ];
 
 const Navbar = () => {
@@ -44,12 +43,6 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
-          <a
-            href="#register"
-            className="glow-button px-6 py-2 rounded-full font-semibold text-primary-foreground"
-          >
-            Register Now
-          </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -75,13 +68,6 @@ const Navbar = () => {
                 {link.label}
               </a>
             ))}
-            <a
-              href="#register"
-              className="glow-button px-6 py-3 rounded-full font-semibold text-primary-foreground text-center mt-2"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Register Now
-            </a>
           </div>
         </div>
       )}

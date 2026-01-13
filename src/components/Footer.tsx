@@ -66,11 +66,6 @@ const Footer = () => {
                   Schedule
                 </a>
               </li>
-              <li>
-                <a href="#register" className="text-muted-foreground hover:text-primary transition-colors">
-                  Register
-                </a>
-              </li>
             </ul>
           </div>
 
