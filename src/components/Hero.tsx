@@ -73,14 +73,6 @@ const Hero = () => {
             Explore Events
           </a>
         </div>
-
-        {/* Scroll Indicator */}
-        <div 
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce animate-fade-up"
-          style={{ animationDelay: "1.5s", opacity: 0 }}
-        >
-          <ChevronDown className="text-muted-foreground" size={32} />
-        </div>
       </div>
     </section>
   );
