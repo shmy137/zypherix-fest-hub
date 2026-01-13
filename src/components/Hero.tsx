@@ -57,18 +57,12 @@ const Hero = () => {
         </p>
 
         <div 
-          className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up"
+          className="animate-fade-up"
           style={{ animationDelay: "1s", opacity: 0 }}
         >
           <a
-            href="#register"
-            className="glow-button px-10 py-4 rounded-full font-bold text-lg text-primary-foreground animate-pulse-glow"
-          >
-            Register Now
-          </a>
-          <a
             href="#events"
-            className="px-10 py-4 rounded-full font-bold text-lg border border-primary/50 text-primary hover:bg-primary/10 transition-all duration-300"
+            className="glow-button px-10 py-4 rounded-full font-bold text-lg text-primary-foreground animate-pulse-glow"
           >
             Explore Events
           </a>
