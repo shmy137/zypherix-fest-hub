@@ -21,16 +21,16 @@ const scheduleData = [
       { time: "06:00 PM", title: "Tech Quiz", description: "Test your knowledge" },
     ],
   },
-  {
-    day: "Day 3",
-    date: "March 17, 2025",
-    events: [
-      { time: "08:00 AM", title: "Hackathon Continues", description: "Final sprint for submissions" },
-      { time: "12:00 PM", title: "Project Presentations", description: "Hackathon teams present solutions" },
-      { time: "04:00 PM", title: "Award Ceremony", description: "Winners announced and prizes distributed" },
-      { time: "06:00 PM", title: "Valedictory Function", description: "Closing ceremony and celebrations" },
-    ],
-  },
+  // {
+  //   day: "Day 3",
+  //   date: "March 17, 2025",
+  //   events: [
+  //     { time: "08:00 AM", title: "Hackathon Continues", description: "Final sprint for submissions" },
+  //     { time: "12:00 PM", title: "Project Presentations", description: "Hackathon teams present solutions" },
+  //     { time: "04:00 PM", title: "Award Ceremony", description: "Winners announced and prizes distributed" },
+  //     { time: "06:00 PM", title: "Valedictory Function", description: "Closing ceremony and celebrations" },
+  //   ],
+  // },
 ];
 
 const Schedule = () => {
@@ -46,11 +46,11 @@ const Schedule = () => {
             <span className="cyber-text-gradient">Schedule</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Three days packed with innovation, competition, and learning opportunities
+            Two days packed with innovation, competition, and learning opportunities
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {scheduleData.map((day, dayIndex) => (
             <div
               key={day.day}
