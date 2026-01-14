@@ -1,5 +1,3 @@
-import { ChevronDown } from "lucide-react";
-
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -62,9 +60,53 @@ const Hero = () => {
         >
           <a
             href="#events"
-            className="glow-button px-10 py-4 rounded-full font-bold text-lg text-primary-foreground animate-pulse-glow"
+            className="
+              group relative inline-flex items-center justify-center
+              px-10 py-4 rounded-full font-bold text-lg
+              text-white overflow-hidden
+              bg-gradient-to-r from-primary to-secondary
+              shadow-lg shadow-primary/30
+              transition-all duration-300
+              hover:scale-[1.05] hover:shadow-xl hover:shadow-primary/50
+              active:scale-[0.98]
+            "
           >
-            Explore Events
+            {/* glowing border */}
+            <span
+              className="
+                absolute inset-0 rounded-full
+                ring-2 ring-white/10
+                group-hover:ring-white/20
+                transition-all duration-300
+              "
+            />
+
+            {/* shine sweep effect */}
+            <span
+              className="
+                absolute -left-1/2 top-0 h-full w-1/2
+                bg-white/30 blur-md
+                skew-x-[-20deg]
+                translate-x-[-120%]
+                group-hover:translate-x-[260%]
+                transition-transform duration-700
+              "
+            />
+
+            {/* inner glow */}
+            <span
+              className="
+                absolute inset-0 rounded-full opacity-0
+                bg-white/10
+                group-hover:opacity-100
+                transition-opacity duration-300
+              "
+            />
+
+            {/* text */}
+            <span className="relative z-10 tracking-wide">
+              Explore Events
+            </span>
           </a>
         </div>
       </div>
