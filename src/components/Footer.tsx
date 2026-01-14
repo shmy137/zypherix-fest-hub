@@ -15,7 +15,7 @@ const Footer = () => {
             </h3>
             <p className="text-muted-foreground mb-6 max-w-md">
               The annual IT fest of Jamia Hamdard, bringing together technology 
-              enthusiasts for three days of innovation, competition, and learning.
+              enthusiasts for two days of innovation, competition, and learning.
             </p>
             <div className="flex gap-4">
               <a
@@ -100,7 +100,7 @@ const Footer = () => {
         {/* Bottom */}
         <div className="pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-muted-foreground text-sm">
-            © 2025 Zypherix. All rights reserved.
+            © 2026 Zypherix. All rights reserved.
           </p>
           <p className="text-muted-foreground text-sm">
             Organized by <span className="text-primary">Department of Computer Science</span>, Jamia Hamdard
