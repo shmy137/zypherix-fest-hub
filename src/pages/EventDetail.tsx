@@ -1,5 +1,5 @@
 import { useParams, Link } from "react-router-dom";
-import { ArrowLeft, Clock, Users, Trophy, MapPin, CheckCircle } from "lucide-react";
+import { ArrowLeft, Clock, Users, Trophy, MapPin, CheckCircle, Award, Layers } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { getEventById } from "@/data/events";
 import Navbar from "@/components/Navbar";
@@ -63,11 +63,11 @@ const EventDetail = () => {
               </p>
 
               {/* Quick Stats */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+              <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-8">
                 <div className="glass-card p-4 text-center">
-                  <Clock className="w-6 h-6 text-primary mx-auto mb-2" />
-                  <p className="text-sm text-muted-foreground">Duration</p>
-                  <p className="font-semibold text-foreground">{event.details.duration}</p>
+                  <Layers className="w-6 h-6 text-primary mx-auto mb-2" />
+                  <p className="text-sm text-muted-foreground">Rounds</p>
+                  <p className="font-semibold text-foreground">{event.details.round}</p>
                 </div>
                 <div className="glass-card p-4 text-center">
                   <Users className="w-6 h-6 text-secondary mx-auto mb-2" />
@@ -76,8 +76,13 @@ const EventDetail = () => {
                 </div>
                 <div className="glass-card p-4 text-center">
                   <Trophy className="w-6 h-6 text-accent mx-auto mb-2" />
-                  <p className="text-sm text-muted-foreground">Prize</p>
-                  <p className="font-semibold text-foreground">{event.details.prize}</p>
+                  <p className="text-sm text-muted-foreground">First Prize</p>
+                  <p className="font-semibold text-foreground">{event.details.firstPrize}</p>
+                </div>
+                <div className="glass-card p-4 text-center">
+                  <Award className="w-6 h-6 text-accent mx-auto mb-2" />
+                  <p className="text-sm text-muted-foreground">Second Prize</p>
+                  <p className="font-semibold text-foreground">{event.details.secondPrize}</p>
                 </div>
                 <div className="glass-card p-4 text-center">
                   <MapPin className="w-6 h-6 text-primary mx-auto mb-2" />
@@ -112,7 +117,7 @@ const EventDetail = () => {
                       <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                       <span className="text-muted-foreground">{rule}</span>
                     </li>
-                  ))}
+                  ))} 
                 </ul>
               </div>
             </div>

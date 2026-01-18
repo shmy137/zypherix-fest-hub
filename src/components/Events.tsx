@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
+// import { ArrowRight } from "lucide-react";
 import { events } from "@/data/events";
 
 const Events = () => {
@@ -20,46 +20,32 @@ const Events = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {events.map((event, index) => {
-            const IconComponent = event.icon;
-            const isPrimary = index % 2 === 0;
-            
+          {events.map((event) => {            
             return (
               <Link
                 key={event.id}
                 to={`/events/${event.id}`}
-                className="glass-card rounded-2xl p-8 group hover:border-primary/50 transition-all duration-500 hover:-translate-y-2 block"
+                className="glass-card rounded-2xl overflow-hidden group hover:border-primary/50 transition-all duration-500 hover:-translate-y-2 block"
               >
-                <div 
-                  className={`w-14 h-14 rounded-xl flex items-center justify-center mb-6 transition-all duration-300 group-hover:scale-110 ${
-                    isPrimary 
-                      ? "bg-primary/20 group-hover:bg-primary/30" 
-                      : "bg-secondary/20 group-hover:bg-secondary/30"
-                  }`}
-                >
-                  <IconComponent 
-                    className={`w-7 h-7 ${isPrimary ? "text-primary" : "text-secondary"}`} 
+                {/* Image */}
+                <div className="w-full">
+                  <img
+                    src={event.image}
+                    alt={event.title}
+                    className="w-full h-auto"
                   />
                 </div>
                 
-                <h3 className="font-display text-2xl font-semibold mb-3 text-foreground">
-                  {event.title}
-                </h3>
-                
-                <p className="text-muted-foreground mb-6">
-                  {event.tagline}
-                </p>
-                
-                <span
-                  className={`inline-flex items-center font-semibold transition-colors duration-300 ${
-                    isPrimary 
-                      ? "text-primary hover:text-primary/80" 
-                      : "text-secondary hover:text-secondary/80"
-                  }`}
-                >
-                  View Details
-                  <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                </span>
+                {/* Content */}
+                <div className="p-6">
+                  <h3 className="font-display text-2xl font-semibold mb-2 text-foreground">
+                    {event.title}
+                  </h3>
+                  
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    {event.tagline}
+                  </p>
+                </div>
               </Link>
             );
           })}
