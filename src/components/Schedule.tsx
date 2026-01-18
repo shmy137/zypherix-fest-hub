@@ -3,7 +3,7 @@ import { Calendar, Clock } from "lucide-react";
 const scheduleData = [
   {
     day: "Day 1",
-    date: "March 15, 2025",
+    date: "January 27, 2026",
     events: [
       { time: "09:00 AM", title: "Inauguration Ceremony", description: "Opening address and keynote speakers" },
       { time: "11:00 AM", title: "Tech Talks Begin", description: "Industry experts share insights" },
@@ -13,24 +13,14 @@ const scheduleData = [
   },
   {
     day: "Day 2",
-    date: "March 16, 2025",
+    date: "January 28, 2026",
     events: [
-      { time: "08:00 AM", title: "Hackathon Kickoff", description: "48-hour coding marathon begins" },
+      { time: "09:00 AM", title: "Real Making", description: "Show your creativity through short reels" },
       { time: "10:00 AM", title: "Coding Challenge", description: "Competitive programming rounds" },
       { time: "02:00 PM", title: "UI/UX Design Contest", description: "Design competition begins" },
       { time: "06:00 PM", title: "Tech Quiz", description: "Test your knowledge" },
     ],
   },
-  // {
-  //   day: "Day 3",
-  //   date: "March 17, 2025",
-  //   events: [
-  //     { time: "08:00 AM", title: "Hackathon Continues", description: "Final sprint for submissions" },
-  //     { time: "12:00 PM", title: "Project Presentations", description: "Hackathon teams present solutions" },
-  //     { time: "04:00 PM", title: "Award Ceremony", description: "Winners announced and prizes distributed" },
-  //     { time: "06:00 PM", title: "Valedictory Function", description: "Closing ceremony and celebrations" },
-  //   ],
-  // },
 ];
 
 const Schedule = () => {
