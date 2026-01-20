@@ -96,7 +96,7 @@ const Hero = () => {
         >
           <span className="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-primary/40 text-primary text-sm font-medium mb-8 backdrop-blur-md bg-white/5 shadow-lg shadow-primary/20">
             <span className="w-2 h-2 rounded-full bg-secondary animate-pulse" />
-            Annual IT Fest of Jamia Hamdard
+            Inter IT Fest of Jamia Hamdard
           </span>
         </div>
 
@@ -130,14 +130,13 @@ const Hero = () => {
           className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-12 animate-fade-up"
           style={{ animationDelay: "0.8s", opacity: 0 }}
         >
-          Where innovation meets excellence. Join hundreds of tech enthusiasts
-          for three days of hacking, learning, and competing.
+          Two days. Multiple events. One ultimate tech experience where innovation meets excellence.
         </p>
 
         {/* Futuristic Button */}
         <div className="animate-fade-up" style={{ animationDelay: "1s", opacity: 0 }}>
           <a
-            href="#events"
+            href="/#events"
             className="
               group relative inline-flex items-center justify-center
               px-12 py-4 rounded-full font-bold text-lg text-white
