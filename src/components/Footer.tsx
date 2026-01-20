@@ -1,4 +1,4 @@
-import { MapPin, Mail, Phone, Instagram, Twitter, Linkedin, Github } from "lucide-react";
+import { MapPin, Mail, Phone, Instagram} from "lucide-react";
 
 const Footer = () => {
   return (
@@ -19,28 +19,10 @@ const Footer = () => {
             </p>
             <div className="flex gap-4">
               <a
-                href="#"
+                href="https://www.instagram.com/zypherix.26/"
                 className="w-10 h-10 rounded-lg bg-muted/50 flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all duration-300"
               >
                 <Instagram className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 rounded-lg bg-muted/50 flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all duration-300"
-              >
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 rounded-lg bg-muted/50 flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all duration-300"
-              >
-                <Linkedin className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 rounded-lg bg-muted/50 flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all duration-300"
-              >
-                <Github className="w-5 h-5" />
               </a>
             </div>
           </div>
@@ -77,9 +59,9 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                <span className="text-muted-foreground">
+                <a href="https://maps.app.goo.gl/x96k66khnTYLX7mC6" className="text-muted-foreground hover:text-primary transition-colors" target="_blank">
                   Jamia Hamdard, Kannur
-                </span>
+                </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-primary shrink-0" />
