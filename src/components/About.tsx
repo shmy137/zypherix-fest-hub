@@ -19,7 +19,7 @@ const features = [
   {
     icon: Zap,
     title: "Learning",
-    description: "Hands-on workshops and tech talks",
+    description: "Learn through challenges, competitions, and real-time problem solving",
   },
 ];
 
