@@ -1,5 +1,7 @@
 import { Brain, Briefcase, Code2, LightbulbOff, Bot, Clapperboard, } from "lucide-react";
 
+export const GoogleFormLink = "https://forms.gle/3GQKhCuaJ6kJQZFz5"
+
 export const events = [
   {
     id: "execor",
@@ -11,7 +13,7 @@ export const events = [
     accentColor: "from-purple-500 to-cyan-500",
     details: {
       round: "6",
-      teamSize: "1",
+      teamSize: "Individual",
       firstPrize: "₹8000",
       secondPrize: "₹2000",
       venue: "Computer Lab Complex",
@@ -26,7 +28,7 @@ export const events = [
       "Late entry may not be allowed once the event has started",
     ],
     timeline: [
-      { time: "Time will be informed on the spot / As per schedule", event: "" },
+      { time: "27 January 2026", event: "Time will be informed on the spot / As per schedule" },
     ],
   },
   {
@@ -39,7 +41,7 @@ export const events = [
     accentColor: "from-cyan-500 to-blue-500",
     details: {
       round: "Two Round",
-      teamSize: "1 Member",
+      teamSize: "Individual",
       firstPrize: "₹8000",
       secondPrize: "₹4000",
       venue: "Computer Lab",
@@ -57,11 +59,7 @@ export const events = [
       "Participation certificates will be provided to all eligible participants",
     ],
     timeline: [
-      { time: "9:00 AM", event: "Check-in & Seat Allocation" },
-      { time: "9:30 AM", event: "Rules Briefing" },
-      { time: "10:00 AM", event: "Contest Begins" },
-      { time: "1:00 PM", event: "Contest Ends" },
-      { time: "2:00 PM", event: "Results Announcement" },
+      { time: "27 January 2026", event: "Time will be informed on the spot / As per schedule" },
     ],
   },
   {
@@ -98,8 +96,7 @@ export const events = [
       "Participation Certificates Will Be Provided To All Eligible Participants",
     ],
     timeline: [
-      { time: "9:00 AM", event: "Registration & Briefing" },
-      { time: "11:00 AM to 04:00 PM", event: "Escape Room Challenge (Obscore Dark Room) - Slot Based Rounds | Solve Hints & Escape Fast!" },
+      { time: "27 January 2026", event: "11:00AM to 04:00PM" },
     ],
   },
   {
@@ -111,25 +108,25 @@ export const events = [
     image: "/events/stellarix.jpeg",
     accentColor: "from-yellow-500 to-orange-500",
     details: {
-      round: "2",
-      teamSize: "1",
+      round: "4",
+      teamSize: "2 Members",
       firstPrize: "₹8000",
       secondPrize: "₹4000",
-      venue: "Room 8",
+      venue: "Room 6",
     },
     rules: [
-      "Teams of exactly 1 members",
-      "Multiple rounds: Written, Rapid Fire, Buzzer",
-      "No electronic devices allowed",
-      "Judges' decision is final",
-      "Tie-breaker questions if needed",
+      "This is a team-based event with exactly two members per team.",,
+      "Participants must carry a valid college ID card.",
+      "Each team must bring their own laptop.",
+      "Internet will NOT be provided; participants must arrange their own connectivity if required.",
+      "Use of premium or paid versions of AI tools is strictly prohibited.",
+      "Pre-written prompts, plagiarism, or unfair practices are strictly prohibited.",
+      "Participants must follow the instructions given by the coordinators and judges.",
+      "The decision of the judges will be final and binding.",
+      "Late entry may not be allowed once the event has started.",
     ],
     timeline: [
-      { time: "10:00 AM", event: "Team Registration" },
-      { time: "10:30 AM", event: "Preliminary Round (Written)" },
-      { time: "11:30 AM", event: "Qualifying Teams Announced" },
-      { time: "12:00 PM", event: "Finals (Buzzer Round)" },
-      { time: "1:00 PM", event: "Prize Distribution" },
+      { time: "27 January 2026", event: "Will be informed on the spot / As per schedule" },
     ],
   },
   {
@@ -157,7 +154,8 @@ export const events = [
       "Late entry may not be allowed once the event has started",
     ],
     timeline: [
-      { time: " Will be informed on the spot / As per schedule", event: "" },
+      { time: "27 January 2026", event: "Time will be informed on the spot / As per schedule" },
+      // { time: "28 January 2026", event: "Time will be informed on the spot / As per schedule" },
     ],
   },
   {
@@ -170,7 +168,7 @@ export const events = [
     accentColor: "from-indigo-500 to-purple-500",
     details: {
       round: "1",
-      teamSize: "1",
+      teamSize: "Individual",
       firstPrize: "₹3000",
       secondPrize: "₹1000",
       venue: "Campus",
@@ -188,8 +186,7 @@ export const events = [
       "Any violation of the rules or use of unfair means will result in immediate disqualification.",
     ],
     timeline: [
-      { time: "09:00 AM", event: "Auraframes (Reel Making)" },
-      { time: "11:00 AM", event: "Final Submission Deadline" },
+      { time: "28 January 2026", event: "09:00 AM to 11:00 AM" },
     ],
   },
   {
@@ -201,11 +198,11 @@ export const events = [
     image: "/events/battleCore.jpeg",
     accentColor: "from-indigo-500 to-purple-500",
     details: {
-      round: "Knockout",
-      teamSize: "1",
+      round: "1",
+      teamSize: "Individual",
       firstPrize: "₹1500",
       secondPrize: "₹800",
-      venue: "Campus",
+      venue: "Stage",
     },
     rules: [
       "Match Type: 1 vs 1",
@@ -224,8 +221,38 @@ export const events = [
       "Late arrival may result in a walkover.",
     ],
     timeline: [
-      { time: "09:00 AM", event: "Auraframes (Reel Making)" },
-      { time: "11:00 AM", event: "Final Submission Deadline" },
+      { time: "27 January 2026", event: "Time will be informed on the spot / As per schedule" },
+    ],
+  },
+  {
+    id: "keystronaut",
+    icon: Clapperboard,
+    title: "Keystronaut",
+    tagline: "Blind Typing",
+    description: "A 1-minute typing challenge where speed and accuracy decide the winner.",
+    image: "/events/battleCore.jpeg",
+    accentColor: "from-indigo-500 to-purple-500",
+    details: {
+      round: "1",
+      teamSize: "Individual",
+      firstPrize: "₹1500",
+      secondPrize: "",
+      venue: "Room no 7",
+    },
+    rules: [
+      "Participants must type without looking at the keyboard during the event.",
+      "The given text must be typed exactly as displayed, including punctuation and spacing.",
+      "Time limit will be strictly followed.",
+      "Accuracy and speed will be considered for evaluation.",
+      "Use of backspace/delete key is allowed unless specified otherwise",
+      "Any form of copy-paste is strictly prohibited",
+      "Participants must use only the assigned system",
+      "Mobile phones, smart devices, or reference materials are not allowed.",
+      "Talking or seeking help during the competition is not permitted.",
+      "The judge's decision will be final and binding.",
+    ],
+    timeline: [
+      { time: "27 January 2026", event: "Time will be informed on the spot / As per schedule" },
     ],
   },
 ];

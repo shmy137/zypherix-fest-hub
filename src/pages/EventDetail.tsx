@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom";
-import { ArrowLeft, Clock, Users, Trophy, MapPin, CheckCircle, Award, Layers } from "lucide-react";
+import { ArrowLeft, Users, Trophy, MapPin, CheckCircle, Award, Layers } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { getEventById } from "@/data/events";
+import { getEventById, GoogleFormLink } from "@/data/events";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -91,7 +91,7 @@ const EventDetail = () => {
                 </div>
               </div>
 
-              <Link to="/#registration">
+              <Link to={GoogleFormLink} target="_blank">
                 <Button size="lg" className="btn-glow text-lg px-8">
                   Register Now
                 </Button>
@@ -161,7 +161,7 @@ const EventDetail = () => {
               Don't miss your chance to be part of {event.title}. Register now and showcase your skills!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/#registration">
+              <Link to={GoogleFormLink} target="_blank">
                 <Button size="lg" className="btn-glow text-lg px-8">
                   Register Now
                 </Button>
