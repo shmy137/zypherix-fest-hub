@@ -2,9 +2,9 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { href: "#about", label: "About" },
-  { href: "#events", label: "Events" },
-  { href: "#schedule", label: "Schedule" },
+  { href: "/#about", label: "About" },
+  { href: "/#events", label: "Events" },
+  { href: "/#schedule", label: "Schedule" },
 ];
 
 const Navbar = () => {
@@ -28,7 +28,7 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
-        <a href="#" className="font-display text-2xl font-bold cyber-text-gradient">
+        <a href="/" className="font-display text-2xl font-bold cyber-text-gradient">
           ZYPHERIX
         </a>
 
