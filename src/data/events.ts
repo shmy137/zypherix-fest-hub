@@ -16,7 +16,7 @@ export const events = [
       teamSize: "Individual",
       firstPrize: "₹8000",
       secondPrize: "₹2000",
-      venue: "Computer Lab Complex",
+      venue: "Auditorium",
     },
     rules: [
       "This is an individual participation event",
@@ -28,7 +28,7 @@ export const events = [
       "Late entry may not be allowed once the event has started",
     ],
     timeline: [
-      { time: "27 January 2026", event: "Time will be informed on the spot / As per schedule" },
+      { time: "27 January 2026", event: "02:30 PM" },
     ],
   },
   {
@@ -59,7 +59,7 @@ export const events = [
       "Participation certificates will be provided to all eligible participants",
     ],
     timeline: [
-      { time: "27 January 2026", event: "Time will be informed on the spot / As per schedule" },
+      { time: "27 January 2026", event: "12:00 PM" },
     ],
   },
   {
@@ -96,7 +96,7 @@ export const events = [
       "Participation Certificates Will Be Provided To All Eligible Participants",
     ],
     timeline: [
-      { time: "27 January 2026", event: "11:00AM to 04:00PM" },
+      { time: "27 January 2026", event: "12:00AM to 04:00PM" },
     ],
   },
   {
@@ -142,7 +142,7 @@ export const events = [
       teamSize: "Maximum of 2",
       firstPrize: "₹8000",
       secondPrize: "₹4000",
-      venue: "Auditorium",
+      venue: "Room 9",
     },
     rules: [
       "This is a team based quiz event",
@@ -154,7 +154,7 @@ export const events = [
       "Late entry may not be allowed once the event has started",
     ],
     timeline: [
-      { time: "27 January 2026", event: "Time will be informed on the spot / As per schedule" },
+      { time: "27 January 2026", event: "12:00 PM" },
       // { time: "28 January 2026", event: "Time will be informed on the spot / As per schedule" },
     ],
   },
@@ -186,7 +186,7 @@ export const events = [
       "Any violation of the rules or use of unfair means will result in immediate disqualification.",
     ],
     timeline: [
-      { time: "28 January 2026", event: "09:00 AM to 11:00 AM" },
+      { time: "28 January 2026", event: "01:30 PM to 02:30 PM" },
     ],
   },
   {
@@ -221,7 +221,7 @@ export const events = [
       "Late arrival may result in a walkover.",
     ],
     timeline: [
-      { time: "27 January 2026", event: "Time will be informed on the spot / As per schedule" },
+      { time: "27 January 2026", event: "02:45 PM" },
     ],
   },
   {
@@ -237,7 +237,7 @@ export const events = [
       teamSize: "Individual",
       firstPrize: "₹1500",
       secondPrize: "Nil",
-      venue: "Room no 7",
+      venue: "Computer Lab",
     },
     rules: [
       "Participants must type without looking at the keyboard during the event.",
@@ -252,7 +252,7 @@ export const events = [
       "The judge's decision will be final and binding.",
     ],
     timeline: [
-      { time: "27 January 2026", event: "Time will be informed on the spot / As per schedule" },
+      { time: "27 January 2026", event: "01:30 PM" },
     ],
   },
 ];
