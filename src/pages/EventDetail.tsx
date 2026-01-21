@@ -22,8 +22,6 @@ const EventDetail = () => {
     );
   }
 
-  const IconComponent = event.icon;
-
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
@@ -42,11 +40,17 @@ const EventDetail = () => {
             Back to Events
           </Link>
 
-          <div className="flex flex-col lg:flex-row items-start gap-12">
-            {/* Event Icon */}
-            <div className={`w-32 h-32 rounded-2xl bg-gradient-to-br ${event.accentColor} p-1 animate-fade-in`}>
-              <div className="w-full h-full bg-card rounded-2xl flex items-center justify-center">
-                <IconComponent className="w-16 h-16 text-primary" />
+          <div className="flex flex-col lg:flex-row items-stretch gap-12">
+            {/* Event Poster */}
+            <div
+              className={`mx-auto w-[240px] sm:w-[280px] md:w-[320px] lg:w-[280px] aspect-[3/4] rounded-2xl bg-gradient-to-br ${event.accentColor} p-1 animate-fade-in`}
+            >
+              <div className="w-full h-full bg-card overflow-hidden rounded-2xl">
+                <img
+                  src={event.image}
+                  alt={event.title}
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
 

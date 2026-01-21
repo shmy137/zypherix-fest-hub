@@ -1,14 +1,11 @@
-import { Brain, Briefcase, Code2, LightbulbOff, Bot, Clapperboard, } from "lucide-react";
-
 export const GoogleFormLink = "https://forms.gle/3GQKhCuaJ6kJQZFz5"
 
 export const events = [
   {
     id: "execor",
-    icon: Briefcase,
     title: "Execor",
     tagline: "Technical Manager",
-    description: "The Tech Manager Challenge is an individual-based technical event designed to test participants’ problem-solving ability, decision-making skills, technical awareness, and managerial thinking. The event simulates real-world technical management scenarios where participants must analyze situations, propose solutions, and demonstrate leadership and logical reasoning.",
+    description: "Technical Manager Challenge tests your technical awareness, decision-making, and leadership mindset through real-world management scenarios.",
     image: "/events/execor.jpeg",
     accentColor: "from-purple-500 to-cyan-500",
     details: {
@@ -33,7 +30,6 @@ export const events = [
   },
   {
     id: "byteon",
-    icon: Code2,
     title: "Byteon",
     tagline: "Coding Challenge",
     description: "Compete against the best coders in timed programming challenges. Solve complex algorithmic problems and prove your coding prowess.",
@@ -64,10 +60,9 @@ export const events = [
   },
   {
     id: "obscura",
-    icon: LightbulbOff,
     title: "Obscura",
     tagline: "Dark Room",
-    description: "The Goal Is To Solve All Hints And Escape The Room Within The Given Time Limit",
+    description: "Enter the Dark Room and put your mind to the test—solve hidden clues, crack every hint, and escape before time runs out!",
     image: "/events/obscura.jpeg",
     accentColor: "from-pink-500 to-purple-500",
     details: {
@@ -101,10 +96,9 @@ export const events = [
   },
   {
     id: "stellarix",
-    icon: Bot,
     title: "Stellarix",
     tagline: "Prompting",
-    description: "Prompting is a team-based technical event designed to test participants’ ability to craft clear, creative, and effective prompts for AI tools. The event evaluates problem-solving skills, logical thinking, and prompt efficiency to generate accurate and relevant AI outputs",
+    description: "Prompting challenges participants to craft smart and creative AI prompts to generate the most accurate and effective outputs within the given tasks.",
     image: "/events/stellarix.jpeg",
     accentColor: "from-yellow-500 to-orange-500",
     details: {
@@ -131,10 +125,9 @@ export const events = [
   },
   {
     id: "cognix",
-    icon: Brain,
     title: "Cognix",
     tagline: "Quiz",
-    description: "The IT Quiz Event is an interactive competition designed to test students’ knowledge of Information Technology. It covers topics like computer fundamentals, programming, networking, cybersecurity, AI, and current IT trends through objective, visual, and advanced rounds. The event promotes learning, quick thinking, and healthy competition among participants.",
+    description: "Quiz is an exciting IT knowledge battle where participants compete through fast-paced rounds covering tech fundamentals, programming, networking, cybersecurity, AI, and current IT trends.",
     image: "/events/cognix.jpeg",
     accentColor: "from-green-500 to-cyan-500",
     details: {
@@ -160,7 +153,6 @@ export const events = [
   },
   {
     id: "auraframes",
-    icon: Clapperboard,
     title: "Auraframes",
     tagline: "Reel Making",
     description: "Showcase your creativity through short and impactful reels! Participants must create a 30–60 second reel based on the given theme using smart editing, storytelling, and visuals. Impress the judges with originality, clarity, and presentation to win exciting prizes.",
@@ -191,7 +183,6 @@ export const events = [
   },
   {
     id: "battlecore",
-    icon: Clapperboard,
     title: "Battle Core",
     tagline: "eFootball mobile",
     description: "If PES runs in your veins, this is YOUR moment!🔥🎮 Report on time for your match slots in Battle Core.",
@@ -226,10 +217,9 @@ export const events = [
   },
   {
     id: "keystronaut",
-    icon: Clapperboard,
     title: "Keystronaut",
     tagline: "Blind Typing",
-    description: "A 1-minute typing challenge where speed and accuracy decide the winner.",
+    description: "Blind Typing is a fast-paced 1-minute challenge where participants type without looking at the monitor. Speed + accuracy decide the winner, so every second and every keystroke matters.",
     image: "",
     accentColor: "from-indigo-500 to-purple-500",
     details: {
