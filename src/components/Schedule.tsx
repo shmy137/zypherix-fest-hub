@@ -5,20 +5,20 @@ const scheduleData = [
     day: "Day 1",
     date: "January 27, 2026",
     events: [
-      { time: "09:00 AM", title: "Inauguration Ceremony", description: "Opening address and keynote speakers" },
-      { time: "11:00 AM", title: "Tech Talks Begin", description: "Industry experts share insights" },
-      { time: "02:00 PM", title: "AI/ML Workshop", description: "Hands-on machine learning session" },
-      { time: "05:00 PM", title: "Networking Session", description: "Connect with peers and mentors" },
+      // { time: "09:00 AM", title: "Inauguration Ceremony", description: "Opening address and keynote speakers" },
+      // { time: "11:00 AM", title: "Tech Talks Begin", description: "Industry experts share insights" },
+      // { time: "02:00 PM", title: "AI/ML Workshop", description: "Hands-on machine learning session" },
+      // { time: "05:00 PM", title: "Networking Session", description: "Connect with peers and mentors" },
     ],
   },
   {
     day: "Day 2",
     date: "January 28, 2026",
     events: [
-      { time: "09:00 AM", title: "Real Making", description: "Show your creativity through short reels" },
-      { time: "10:00 AM", title: "Coding Challenge", description: "Competitive programming rounds" },
-      { time: "02:00 PM", title: "UI/UX Design Contest", description: "Design competition begins" },
-      { time: "06:00 PM", title: "Tech Quiz", description: "Test your knowledge" },
+      // { time: "09:00 AM", title: "Real Making", description: "Show your creativity through short reels" },
+      // { time: "10:00 AM", title: "Coding Challenge", description: "Competitive programming rounds" },
+      // { time: "02:00 PM", title: "UI/UX Design Contest", description: "Design competition begins" },
+      // { time: "06:00 PM", title: "Tech Quiz", description: "Test your knowledge" },
     ],
   },
 ];
