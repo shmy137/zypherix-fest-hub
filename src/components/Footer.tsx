@@ -21,6 +21,7 @@ const Footer = () => {
               <a
                 href="https://www.instagram.com/zypherix.26/"
                 className="w-10 h-10 rounded-lg bg-muted/50 flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all duration-300"
+                target="_blank"
               >
                 <Instagram className="w-5 h-5" />
               </a>
