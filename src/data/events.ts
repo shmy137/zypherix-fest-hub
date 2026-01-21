@@ -230,7 +230,7 @@ export const events = [
     title: "Keystronaut",
     tagline: "Blind Typing",
     description: "A 1-minute typing challenge where speed and accuracy decide the winner.",
-    image: "/events/battleCore.jpeg",
+    image: "",
     accentColor: "from-indigo-500 to-purple-500",
     details: {
       round: "1",
