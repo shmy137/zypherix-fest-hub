@@ -42,8 +42,8 @@ export const events = [
     details: {
       round: "Two Round",
       teamSize: "Individual",
-      firstPrize: "₹8000",
-      secondPrize: "₹4000",
+      firstPrize: "₹6000",
+      secondPrize: "₹3000",
       venue: "Computer Lab",
     },
     rules: [
@@ -104,14 +104,14 @@ export const events = [
     icon: Bot,
     title: "Stellarix",
     tagline: "Prompting",
-    description: "Put your technical knowledge to the test in this exciting quiz competition covering programming, tech history, and current trends.",
+    description: "Prompting is a team-based technical event designed to test participants’ ability to craft clear, creative, and effective prompts for AI tools. The event evaluates problem-solving skills, logical thinking, and prompt efficiency to generate accurate and relevant AI outputs",
     image: "/events/stellarix.jpeg",
     accentColor: "from-yellow-500 to-orange-500",
     details: {
       round: "4",
       teamSize: "2 Members",
-      firstPrize: "₹8000",
-      secondPrize: "₹4000",
+      firstPrize: "₹7000",
+      secondPrize: "₹3000",
       venue: "Room 6",
     },
     rules: [
@@ -236,7 +236,7 @@ export const events = [
       round: "1",
       teamSize: "Individual",
       firstPrize: "₹1500",
-      secondPrize: "",
+      secondPrize: "Nil",
       venue: "Room no 7",
     },
     rules: [
