@@ -139,7 +139,7 @@ export const events = [
     accentColor: "from-green-500 to-cyan-500",
     details: {
       round: "2",
-      teamSize: "2",
+      teamSize: "Maximum of 2",
       firstPrize: "₹8000",
       secondPrize: "₹4000",
       venue: "Auditorium",
