@@ -4,6 +4,7 @@ import About from "@/components/About";
 import Events from "@/components/Events";
 import Schedule from "@/components/Schedule";
 import Footer from "@/components/Footer";
+import Sponsors from "@/components/Sponsors";
 
 const Index = () => {
   return (
@@ -13,6 +14,7 @@ const Index = () => {
       <About />
       <Events />
       <Schedule />
+      <Sponsors />
       <Footer />
     </div>
   );
