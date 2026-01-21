@@ -240,7 +240,7 @@ export const events = [
       venue: "Computer Lab",
     },
     rules: [
-      "Participants must type without looking at the keyboard during the event.",
+      "Participants must type without looking at the monitor during the event.",
       "The given text must be typed exactly as displayed, including punctuation and spacing.",
       "Time limit will be strictly followed.",
       "Accuracy and speed will be considered for evaluation.",
