@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Download } from "lucide-react";
 
 const navLinks = [
   { href: "/#about", label: "About" },
@@ -7,14 +7,14 @@ const navLinks = [
   { href: "/#schedule", label: "Schedule" },
 ];
 
+const BROCHURE_URL = "/ZypherixBrochure.pdf";
+
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
+    const handleScroll = () => setIsScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -22,32 +22,45 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "glass-card py-3"
-          : "bg-transparent py-5"
+        isScrolled ? "glass-card py-3" : "bg-transparent py-5"
       }`}
     >
-      <div className="container mx-auto px-4 flex items-center justify-between">
+      <div className="container mx-auto px-4 flex items-center">
+        {/* Logo */}
         <a href="/" className="font-display text-2xl font-bold cyber-text-gradient">
           ZYPHERIX
         </a>
 
-        {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="text-foreground/80 hover:text-primary transition-colors duration-300 font-medium"
-            >
-              {link.label}
-            </a>
-          ))}
+        {/* Desktop Right Side */}
+        <div className="hidden md:flex items-center gap-8 ml-auto justify-end shrink-0">
+          {/* Nav Links */}
+          <div className="flex items-center gap-8">
+            {navLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="text-base font-medium text-foreground/80 hover:text-primary transition-colors duration-300"
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
+
+          {/* Brochure Button */}
+          <a
+            href={BROCHURE_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-primary text-primary-foreground font-semibold text-sm hover:opacity-90 transition whitespace-nowrap"
+          >
+            <Download size={18} />
+            Brochure
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-foreground"
+          className="md:hidden ml-auto text-foreground"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
@@ -62,12 +75,22 @@ const Navbar = () => {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-foreground/80 hover:text-primary transition-colors py-2 font-medium"
+                className="text-base font-medium text-foreground/80 hover:text-primary transition-colors py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {link.label}
               </a>
             ))}
+            <a
+              href={BROCHURE_URL}
+              target="_blank"
+              rel="noreferrer"
+              className="mt-2 inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-primary text-primary-foreground font-semibold text-base"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              <Download size={18} />
+              Download Brochure
+            </a>
           </div>
         </div>
       )}
