@@ -4,12 +4,10 @@ import { Badge } from "@/components/ui/badge";
 const SponsorImage = ({
   name,
   logo,
-  url,
   className,
 }: {
   name: string;
   logo: string;
-  url?: string;
   className?: string;
 }) => {
   const Img = (
@@ -21,17 +19,7 @@ const SponsorImage = ({
     />
   );
 
-  return url ? (
-    <a
-      href={url}
-      target="_blank"
-      rel="noreferrer"
-      aria-label={name}
-      className="inline-flex items-center justify-center"
-    >
-      {Img}
-    </a>
-  ) : (
+  return (
     <div className="inline-flex items-center justify-center">{Img}</div>
   );
 };
@@ -71,7 +59,6 @@ const Sponsors = () => {
                 key={s.name}
                 name={s.name}
                 logo={s.logo}
-                url={s.url}
                 className="h-24 md:h-28 w-auto"
               />
             ))}
@@ -95,7 +82,6 @@ const Sponsors = () => {
                 key={s.name}
                 name={s.name}
                 logo={s.logo}
-                url={s.url}
                 className="h-20 md:h-24 w-auto"
               />
             ))}
@@ -124,7 +110,6 @@ const Sponsors = () => {
                   <SponsorImage
                     name={s.name}
                     logo={s.logo}
-                    url={s.url}
                     className="h-14 md:h-16 w-auto"
                   />
                 </div>
