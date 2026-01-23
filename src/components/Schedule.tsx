@@ -12,9 +12,9 @@ const scheduleData = [
       { time: "12:00 PM", title: "coding", description: "" },
       { time: "12:00 PM", title: "Prompting", description: "" },
       { time: "12:00 PM", title: "Quiz", description: "" },
-      { time: "1:30 PM", title: "Reel Making", description: "" },
-      { time: "2:30 PM", title: "Blind Typing", description: "" },
-      { time: "2:45 PM", title: "Gaming", description: "" },
+      { time: "01:30 PM", title: "Reel Making", description: "" },
+      { time: "02:30 PM", title: "Blind Typing", description: "" },
+      { time: "02:45 PM", title: "Gaming", description: "" },
     ],
   },
   {
