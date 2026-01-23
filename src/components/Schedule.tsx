@@ -7,8 +7,8 @@ const scheduleData = [
     events: [
       { time: "09:00 AM", title: "Registration", description: "" },
       { time: "10:00 AM", title: "Inauguration", description: "" },
-      { time: "11:30 PM", title: "Tecnical Manager", description: "" },
-      { time: "12:00 AM", title: "Priliminary Rounds for All Events", description: "" },
+      { time: "11:30 AM", title: "Tecnical Manager", description: "" },
+      { time: "12:00 PM", title: "Priliminary Rounds for All Events", description: "" },
       { time: "12:00 PM", title: "coding", description: "" },
       { time: "12:00 PM", title: "Prompting", description: "" },
       { time: "12:00 PM", title: "Quiz", description: "" },
