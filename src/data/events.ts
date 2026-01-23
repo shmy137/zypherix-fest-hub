@@ -225,7 +225,7 @@ export const events = [
     title: "Keystronaut",
     tagline: "Blind Typing",
     description: "Blind Typing is a fast-paced 1-minute challenge where participants type without looking at the monitor. Speed + accuracy decide the winner, so every second and every keystroke matters.",
-    image: "/events/zypherixPoster.jpeg",
+    image: "/events/BlindTyping.jpg.jpeg",
     accentColor: "from-indigo-500 to-purple-500",
     details: {
       round: "1",
