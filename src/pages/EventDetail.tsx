@@ -131,24 +131,37 @@ const EventDetail = () => {
               <h2 className="text-3xl font-orbitron font-bold text-foreground mb-8">
                 Event <span className="text-secondary">Timeline</span>
               </h2>
-              <div className="glass-card p-8">
-                <div className="space-y-6">
-                  {event.timeline.map((item, index) => (
-                    <div key={index} className="flex gap-4">
-                      <div className="relative">
-                        <div className={`w-3 h-3 rounded-full bg-gradient-to-r ${event.accentColor}`} />
-                        {index < event.timeline.length - 1 && (
-                          <div className="absolute top-3 left-1/2 -translate-x-1/2 w-0.5 h-full bg-border" />
-                        )}
-                      </div>
-                      <div className="pb-6">
-                        <p className="text-sm text-primary font-semibold">{item.time}</p>
-                        <p className="text-foreground">{item.event}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
+              <div className="space-y-6">
+  {event.timeline.map((item, index) => (
+    <div key={index} className="flex gap-4">
+      <div className="relative">
+        <div className={`w-3 h-3 rounded-full bg-gradient-to-r ${event.accentColor}`} />
+        {index < event.timeline.length - 1 && (
+          <div className="absolute top-3 left-1/2 -translate-x-1/2 w-0.5 h-full bg-border" />
+        )}
+      </div>
+
+      <div className="pb-6 w-full">
+        {/* DAY + TIME + VENUE row */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 text-sm font-semibold">
+          <p className="text-primary">
+            <span className="text-muted-foreground font-medium">DAY:</span> {item.day}
+          </p>
+          <p className="text-secondary">
+            <span className="text-muted-foreground font-medium">TIME:</span> {item.time}
+          </p>
+          <p className="text-accent">
+            <span className="text-muted-foreground font-medium">VENUE:</span> {item.venue}
+          </p>
+        </div>
+
+        {/* Event title
+        <p className="text-foreground mt-2">{item.event}</p> */}
+      </div>
+    </div>
+  ))}
+</div>
+
             </div>
           </div>
         </div>

@@ -1,3 +1,5 @@
+import { time } from "console";
+
 export const GoogleFormLink = "https://forms.gle/3GQKhCuaJ6kJQZFz5"
 
 export const events = [
@@ -25,7 +27,9 @@ export const events = [
       "Late entry may not be allowed once the event has started",
     ],
     timeline: [
-      { time: "27 January 2026", event: "02:30 PM" },
+      { day: "27 January 2026", time: "11:30 AM", venue:"Auditorium" },
+      { day: "27 January 2026", time: "02:45 PM", venue:"Library" },
+      { day: "28 January 2026", time: "10:15 AM", venue:"Auditorium" },
     ],
   },
   {
@@ -55,7 +59,7 @@ export const events = [
       "Participation certificates will be provided to all eligible participants",
     ],
     timeline: [
-      { time: "27 January 2026", event: "12:00 PM" },
+      { day: "27 January 2026", time: "12:00 PM", venue:"Lab" },
     ],
   },
   {
@@ -91,7 +95,7 @@ export const events = [
       "Participation Certificates Will Be Provided To All Eligible Participants",
     ],
     timeline: [
-      { time: "27 January 2026", event: "12:00AM to 04:00PM" },
+      { day: "27 January 2026", time: "12:00 PM", venue:"Room No: 5" },
     ],
   },
   {
@@ -120,7 +124,8 @@ export const events = [
       "Late entry may not be allowed once the event has started.",
     ],
     timeline: [
-      { time: "27 January 2026", event: "Will be informed on the spot / As per schedule" },
+      { day: "27 January 2026", time: "12:00 PM", venue:"Room No: 6" },
+      { day: "28 January 2026", time: "10:15 AM", venue:"Room No: 6" },
     ],
   },
   {
@@ -147,8 +152,8 @@ export const events = [
       "Late entry may not be allowed once the event has started",
     ],
     timeline: [
-      { time: "27 January 2026", event: "12:00 PM" },
-      // { time: "28 January 2026", event: "Time will be informed on the spot / As per schedule" },
+      { day: "27 January 2026", time: "12:00 PM", venue:"Room No: 9" },
+      { day: "27 January 2026", time: "02:00 PM", venue:"Auditorium" },
     ],
   },
   {
@@ -178,7 +183,7 @@ export const events = [
       "Any violation of the rules or use of unfair means will result in immediate disqualification.",
     ],
     timeline: [
-      { time: "28 January 2026", event: "01:30 PM to 02:30 PM" },
+      { day: "27 January 2026", time: "01:30 PM", venue:"Campus" },
     ],
   },
   {
@@ -212,7 +217,7 @@ export const events = [
       "Late arrival may result in a walkover.",
     ],
     timeline: [
-      { time: "27 January 2026", event: "02:45 PM" },
+      { day: "27 January 2026", time: "02:45 PM", venue:"Room No: 9" },
     ],
   },
   {
@@ -242,7 +247,7 @@ export const events = [
       "The judge's decision will be final and binding.",
     ],
     timeline: [
-      { time: "27 January 2026", event: "01:30 PM" },
+      { day: "27 January 2026", time: "02:45 AM", venue:"Lab" },
     ],
   },
 ];
