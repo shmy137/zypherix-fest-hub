@@ -7,11 +7,11 @@ const scheduleData = [
     events: [
       { time: "09:00 AM", title: "Registration", description: "" },
       { time: "10:00 AM", title: "Inauguration", description: "" },
+      { time: "11:30 PM", title: "Tecnical Manager", description: "" },
       { time: "12:00 AM", title: "Priliminary Rounds for All Events", description: "" },
       { time: "12:00 PM", title: "coding", description: "" },
       { time: "12:00 PM", title: "Prompting", description: "" },
       { time: "12:00 PM", title: "Quiz", description: "" },
-      { time: "12:00 PM", title: "Tecnical Manager", description: "" },
       { time: "1:30 PM", title: "Reel Making", description: "" },
       { time: "2:30 PM", title: "Blind Typing", description: "" },
       { time: "2:45 PM", title: "Gaming", description: "" },
@@ -22,7 +22,7 @@ const scheduleData = [
     date: "January 28, 2026",
     events: [
       { time: "10:00 AM", title: "Prompting Final", description: "" },
-      { time: "10:15 AM", title: "Technical Manager Final", description: "" },
+      { time: "10:00 AM", title: "Technical Manager Final", description: "" },
       { time: "02:00 PM", title: "Prize Distribution", description: "" },
       { time: "02:30 PM", title: "Cultural Events", description: "" },
     ],
