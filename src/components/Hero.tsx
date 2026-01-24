@@ -102,27 +102,27 @@ const Hero = () => {
 
         {/* Glitch Title */}
         <h1
-          className="relative font-display text-6xl md:text-8xl lg:text-9xl font-black mb-6 animate-fade-up"
+          className="relative font-display font-black mb-6 text-[clamp(3rem,12vw,9rem)] loading-[0.95] text-center animate-fade-up"
           style={{ animationDelay: "0.4s", opacity: 0 }}
         >
-          <span className="relative inline-block cyber-text-gradient glitch">
+          <span className="relative inline-block cyber-text-gradient glitch whitespace-nowrap max-w-full scale-[0.95] sm:scale-100">
             ZYPHERIX
           </span>
 
           {/* subtle glow */}
-          <span className="absolute inset-0 blur-3xl opacity-40 cyber-text-gradient select-none pointer-events-none">
+          <span className="absolute inset-0 blur-3xl opacity-40 cyber-text-gradient pointer-events-none">
             ZYPHERIX
           </span>
         </h1>
 
         <p
-          className="text-xl md:text-2xl lg:text-3xl font-display text-foreground/80 mb-4 tracking-wider animate-fade-up"
+          className="font-display text-foreground/80 mb-4 tracking-wide text-[clamp(1.1rem,5vw,2.2rem)] flex flex-wrap justify-center items-center gap-x-3 gap-y-2 animate-fade-up"
           style={{ animationDelay: "0.6s", opacity: 0 }}
         >
           <span className="text-primary">Innovate</span>
-          <span className="mx-3 text-secondary">•</span>
+          <span className="text-secondary hidden sm:inline">•</span>
           <span className="text-secondary">Code</span>
-          <span className="mx-3 text-primary">•</span>
+          <span className="text-primary hidden sm:inline">•</span>
           <span className="text-primary">Dominate</span>
         </p>
 
