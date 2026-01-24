@@ -247,7 +247,7 @@ export const events = [
       "The judge's decision will be final and binding.",
     ],
     timeline: [
-      { day: "27 January 2026", time: "02:45 AM", venue:"Lab" },
+      { day: "27 January 2026", time: "02:45 PM", venue:"Lab" },
     ],
   },
 ];
