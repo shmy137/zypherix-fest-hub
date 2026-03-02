@@ -1,7 +1,7 @@
 ## Project info
 
 **URL**: 
-zypherix.vercel.app
+https://zypherix26.vercel.app/
 
 
 **Use your preferred IDE**
